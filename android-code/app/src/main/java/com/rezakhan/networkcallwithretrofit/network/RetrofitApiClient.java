@@ -1,4 +1,4 @@
-package com.rezakhan.networkcallwithretrofit.Network;
+package com.rezakhan.networkcallwithretrofit.network;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

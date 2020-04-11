@@ -1,4 +1,4 @@
-package com.rezakhan.networkcallwithretrofit.Model;
+package com.rezakhan.networkcallwithretrofit.model;
 
 
 import com.google.gson.annotations.SerializedName;
@@ -7,6 +7,7 @@ public class ServerResponse {
 
         @SerializedName("status")
         boolean statusString;
+
         @SerializedName("message")
         String messageString;
 

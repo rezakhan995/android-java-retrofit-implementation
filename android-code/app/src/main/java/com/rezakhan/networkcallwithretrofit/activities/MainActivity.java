@@ -1,15 +1,18 @@
-package com.rezakhan.networkcallwithretrofit.Activity;
+package com.rezakhan.networkcallwithretrofit.activities;
 
 import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.rezakhan.networkcallwithretrofit.Model.User;
-import com.rezakhan.networkcallwithretrofit.Network.MyApiService;
-import com.rezakhan.networkcallwithretrofit.Network.NetworkCall;
-import com.rezakhan.networkcallwithretrofit.Network.ResponseCallback;
+
+import com.rezakhan.networkcallwithretrofit.model.User;
+import com.rezakhan.networkcallwithretrofit.network.MyApiService;
+import com.rezakhan.networkcallwithretrofit.network.NetworkCall;
+import com.rezakhan.networkcallwithretrofit.network.ResponseCallback;
 import com.rezakhan.networkcallwithretrofit.R;
 import com.orhanobut.logger.AndroidLogAdapter;
 import com.orhanobut.logger.Logger;
@@ -32,13 +35,12 @@ public class MainActivity extends AppCompatActivity {
         passwordEditText = (EditText) findViewById(R.id.login_password);
         jokeUserIdEditText = (EditText) findViewById(R.id.user_id_for_joke);
         jokeTextView = (TextView) findViewById(R.id.jokeTextView);
-
     }
 
     // Login button event
-    public void buttonClickEvent(View view){
+    public void buttonClickEvent(View view) {
 
-        if(view.getId()==R.id.login_button){
+        if (view.getId() == R.id.login_button) {
             String userId;
             String password;
             User user = new User();
@@ -65,8 +67,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }); //user credential and listener
 
-        }
-        else {
+        } else {
             String userId;
 
             userId = jokeUserIdEditText.getText().toString();
@@ -88,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
             }); //user credential and listener
 
         }
-        
+
     }
 
     private void showToast(String msg) {

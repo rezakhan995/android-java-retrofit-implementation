@@ -1,4 +1,4 @@
-package com.rezakhan.networkcallwithretrofit.Network;
+package com.rezakhan.networkcallwithretrofit.network;
 
 public interface ResponseCallback<T> {
     void onSuccess(T data);

@@ -1,7 +1,7 @@
-package com.rezakhan.networkcallwithretrofit.Network;
+package com.rezakhan.networkcallwithretrofit.network;
 
-import com.rezakhan.networkcallwithretrofit.Model.User;
-import com.rezakhan.networkcallwithretrofit.Model.ServerResponse;
+import com.rezakhan.networkcallwithretrofit.model.User;
+import com.rezakhan.networkcallwithretrofit.model.ServerResponse;
 
 import retrofit2.Call;
 import retrofit2.http.Body;

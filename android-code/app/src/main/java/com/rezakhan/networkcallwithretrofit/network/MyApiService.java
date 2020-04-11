@@ -1,6 +1,6 @@
-package com.rezakhan.networkcallwithretrofit.Network;
+package com.rezakhan.networkcallwithretrofit.network;
 
-import com.rezakhan.networkcallwithretrofit.Model.User;
+import com.rezakhan.networkcallwithretrofit.model.User;
 
 public interface MyApiService {
     void userValidityCheck(User userLoginCredential, ResponseCallback<String> callback);

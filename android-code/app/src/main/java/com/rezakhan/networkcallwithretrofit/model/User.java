@@ -1,4 +1,4 @@
-package com.rezakhan.networkcallwithretrofit.Model;
+package com.rezakhan.networkcallwithretrofit.model;
 
 import com.google.gson.annotations.SerializedName;
 
@@ -6,6 +6,7 @@ public class User {
 
         @SerializedName("user_id")
         private String userId;
+
         @SerializedName("password")
         private String password;
 
